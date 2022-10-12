@@ -68,7 +68,7 @@ public class ListGameHelper {
 		em.getTransaction().begin();
 		TypedQuery<ListGame> typedQuery = em.createQuery("select lg from ListGame lg where lg.genre = : selectedGenre", ListGame.class);
 		
-		typedQuery.setParameter("selectedTItle", genre);
+		typedQuery.setParameter("selectedGenre", genre);
 		
 		List<ListGame> foundGames = typedQuery.getResultList();
 		em.close();
