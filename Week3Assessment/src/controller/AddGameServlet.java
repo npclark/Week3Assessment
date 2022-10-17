@@ -20,7 +20,7 @@ public class AddGameServlet extends HttpServlet {
      */
     public AddGameServlet() {
         super();
-        // TODO Auto-generated constructor stub
+        
     }
 
 	/**
